@@ -1,0 +1,18 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowListOfCities</title>
+</head>
+<body>
+    <table>
+        @foreach (var item in ViewData["cities"] as List<City>) { <tr><td><Lable>@item.Name</Lable></td>
+        </tr>}
+    </table>
+</body>
+</html>
