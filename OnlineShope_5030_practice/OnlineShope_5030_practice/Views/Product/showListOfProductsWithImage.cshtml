@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>showListOfProductsWithImage</title>
+</head>
+<body>
+    @{
+        List<Products> products = ViewData["products"] as List<Products>;
+    }
+    <table border = "1">
+        <thead>
+            
+        </thead>
+        <tbody>
+            @foreach (var item in products)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                </tr>
+                <tr>
+                    <td>@item.Name</td>
+                </tr>
+                <tr>
+                    <td>@item.Price</td>
+                </tr>
+                <tr>
+                    <td>@item.Count</td>
+                </tr>
+                <tr>
+                    <td><img width ="100" src = "@($"data:image/jpeg; base64,{Convert.ToBase64String(item.Image)}")" /></td>
+                </tr>
+            }
+        </tbody>
+        </table>
+</body>
+</html>

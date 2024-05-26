@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowListOfProducts</title>
+</head>
+<body>
+    <form asp-action = "DelteMany" asp-controller = "Product">
+    <table border = "1">
+        @foreach (var item in ViewData["products"] as List<Products>)
+        {
+            <tr>
+                <td><label>@item.Title</label></td>
+                <td><label>@item.Name</label> </td>
+                <td><label>@item.Count</label></td>
+                <td><label>@item.Price</label></td>
+                <td><form asp-action= "Delete" asp-controller = "Product"><input value = "@item.Id" name = "id" type = "hidden" /><button>Remove</button></form></td>
+                <td>
+                    <a asp-action = "Edit" asp-controller = "Product" asp-route-Id = "@item.Id">Edit</a>
+                </td>
+
+                <!-------------------Add check box for DeleteMany records--------------------->
+                <td>
+                    <input type = "checkbox" value = "@item.Id" name = "productsIds">
+                </td>
+
+
+            </tr>
+
+        }
+    </table>
+    <button>Delete selected rews</button>
+    </form>
+</body>

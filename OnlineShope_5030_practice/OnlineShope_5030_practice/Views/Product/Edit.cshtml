@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    
+        @{
+            Products product = ViewData["product"] as Products; // object to self define class
+        }
+        <form asp-action = "Update" asp-route-Id = "@product.Id" asp-controller = "Product">
+            <input hidden-valu value = "@product.Id" name = "id"/><br />
+            <label>title :</label>
+            <input value = "@product.Title" name = "title"/><br />
+            <label>name :</label>
+            <input value = "@product.Name" name = "name"/><br />
+            <label>price :</label>
+            <input value = "@product.Price" name = "price" /><br />
+            <label>Count :</label>
+            <input value = "@product.Count" name ="count" /><br />
+            <button>Update</button>
+        </form>
+    
+</body>
+</html>

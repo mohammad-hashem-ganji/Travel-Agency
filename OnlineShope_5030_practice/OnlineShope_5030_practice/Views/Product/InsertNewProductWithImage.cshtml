@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>InsertNewProductWithImage</title>
+</head>
+<body>
+    <form asp-action="InsertConfirmProductWithImagea" asp-controller="" method="post" enctype="multipart/form-data">
+        <label> Title</label><input name="title" /><br />
+        <label> Name</label><input name="name" />  <br />
+        <label> Count</label><input name="count" /><br />
+        <label> Price</label><input name="price" /><br />
+        <dive>
+            <input type="file" name="img" />
+        </dive><br />
+        <button> Save New Product </button>
+
+
+    </form>
+</body>
+</html>
