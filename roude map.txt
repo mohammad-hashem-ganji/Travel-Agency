@@ -1,0 +1,7 @@
+-DB relations code first
+-search in database code first
+-CRUD
+-front end
+-web base connectors 
+-back end Pro
+-front end pro ->java script . json . ajax 

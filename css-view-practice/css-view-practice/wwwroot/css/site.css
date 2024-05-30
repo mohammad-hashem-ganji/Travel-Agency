@@ -1,0 +1,19 @@
+@import url('file:///C:\Users\ASUS\Desktop\5030\css-view-practice\css-view-practice\wwwroot\css\site.css');
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
