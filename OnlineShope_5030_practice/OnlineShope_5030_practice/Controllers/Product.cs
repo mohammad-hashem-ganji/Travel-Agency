@@ -112,22 +112,22 @@ namespace OnlineShope_5030_practice.Controllers
             }
             return RedirectToAction("InsertNewProductWithImage", "Product");
         }
-        public IActionResult SearchProducts(string search)
-        {
+        //public IActionResult SearchProducts(string search)
+        //{
 
-            using (Models.DB_OnlineShope_5030 onlineShope_5030 = new())
-            {
-                var commodities = new List<Models.Products>();
-                if (search != null)
-                {
-                    commodities = onlineShope_5030.Products.Where(x => x.Title.ToLower().Contains(search.ToLower())).ToList();
-                }
-                else
-                {
-                    commodities = onlineShope_5030.Products.ToList();
-                }
-                commodities = (search != null) ? onlineShope_5030.Products.Where(x => x.Title.ToLower().Contains(search.ToLower())).ToList() : onlineShope_5030.Products.ToList();
-            }
-        }
+        //    using (Models.DB_OnlineShope_5030 onlineShope_5030 = new())
+        //    {
+        //        var commodities = new List<Models.Products>();
+        //        if (search != null)
+        //        {
+        //            commodities = onlineShope_5030.Products.Where(x => x.Title.ToLower().Contains(search.ToLower())).ToList();
+        //        }
+        //        else
+        //        {
+        //            commodities = onlineShope_5030.Products.ToList();
+        //        }
+        //        commodities = (search != null) ? onlineShope_5030.Products.Where(x => x.Title.ToLower().Contains(search.ToLower())).ToList() : onlineShope_5030.Products.ToList();
+        //    }
+        //}
     }
 }

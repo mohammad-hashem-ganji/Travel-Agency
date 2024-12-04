@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlineShope_5030_practice")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+069c5a78e4afa6e848bc86a6718aeffafac0d787")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlineShope_5030_practice")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlineShope_5030_practice")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
